@@ -92,4 +92,18 @@ TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 TW_NO_USB_STORAGE := true
 TW_BRIGHTNESS_PATH := /sys/class/backlight/pwm-backlight/brightness
 TW_MAX_BRIGHTNESS := 255
+#TWRP_EVENT_LOGGING := true
+TARGET_RECOVERY_INITRC := device/nvidia/shieldtablet/init.rc
 endif
+
+# MultiROM
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/nvidia/shieldtablet/multirom/mr_init_devices.c
+MR_RD_ADDR := 0x82500000
+MR_DPI := hdpi
+MR_DPI_FONT := 216
+MR_FSTAB := device/nvidia/shieldtablet/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x85000000
+MR_KEXEC_DTB := true
+MR_DEVICE_HOOKS := device/nvidia/shieldtablet/multirom/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 3
