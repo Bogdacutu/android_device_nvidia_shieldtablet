@@ -53,6 +53,12 @@ const char *mr_init_devices[] = {
 	"/sys/devices/virtual/misc/watchdog",
 	"/sys/devices/virtual/watchdog*",
 
+	// fix for slow reboot
+	//"/sys/bus/platform/drivers/host1x",
+	//"/sys/devices/platform/host1x",
+	//"/sys/devices/platform/host1x*",
+	// initialized separately
+
 	//"/sys*", // yolo
 
 	NULL
