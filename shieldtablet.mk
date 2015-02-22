@@ -76,6 +76,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/touchscreen/para_10_0a_00_b0.so:root/sbin/touchscreen/para_10_0a_00_b0.so \
     $(LOCAL_PATH)/touchscreen/para_10_0b_00_a0.so:root/sbin/touchscreen/para_10_0b_00_a0.so \
     $(LOCAL_PATH)/rootdir/etc/setmodel.sh:root/setmodel.sh \
+    $(LOCAL_PATH)/rootdir/sbin/setpropex:root/sbin/setpropex \
 
 # Enable repeatable keys in CWM
 PRODUCT_PROPERTY_OVERRIDES += \

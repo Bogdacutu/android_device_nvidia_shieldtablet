@@ -14,6 +14,6 @@ for x in "$@"; do
 	esac
 done
 echo $model
-setprop ro.product.name $model
-setprop ro.build.product $model
-setprop ro.cm.device $model
+setpropex ro.product.name $model
+setpropex ro.build.product $model
+setpropex ro.cm.device $model
